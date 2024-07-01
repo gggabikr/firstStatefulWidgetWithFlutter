@@ -1,0 +1,1 @@
+ /Users/jasonlee/Flutter/first_stateful_widget/firstStatefulWidgetWithFlutter/.dart_tool/flutter_build/2c2b7402940e59af2fb095619d8f665a/native_assets.yaml: 
