@@ -1,3 +1,4 @@
+import 'package:first_stateful_widget/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,9 +22,7 @@ class App extends StatelessWidget {
         ),
         cardColor: const Color(0xFFF4EDDB),
       ),
-      home: const Scaffold(
-        body: Center(),
-      ),
+      home: const HomeScreen(),
     );
   }
 }
