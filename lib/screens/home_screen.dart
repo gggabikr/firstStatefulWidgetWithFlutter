@@ -50,6 +50,16 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  void onResetPressed() {
+    onPausePressed();
+    totalSeconds = twentyFiveMinutes;
+  }
+
+  void totalResetClicked() {
+    onResetPressed();
+    totalPomodoros = 0;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,15 +83,24 @@ class _HomeScreenState extends State<HomeScreen> {
           Flexible(
             flex: 11,
             child: Center(
-              child: IconButton(
-                onPressed: isRunning ? onPausePressed : onStartPressed,
-                iconSize: 120,
-                color: Theme.of(context).cardColor,
-                icon: Icon(isRunning
-                    ? Icons.pause_circle_outline
-                    : Icons.play_circle_outline),
-              ),
-            ),
+                child: Column(
+              children: [
+                IconButton(
+                  onPressed: isRunning ? onPausePressed : onStartPressed,
+                  iconSize: 120,
+                  color: Theme.of(context).cardColor,
+                  icon: Icon(isRunning
+                      ? Icons.pause_circle_outline
+                      : Icons.play_circle_outline),
+                ),
+                IconButton(
+                  onPressed: onResetPressed,
+                  iconSize: 50,
+                  color: Theme.of(context).cardColor,
+                  icon: const Icon(Icons.change_circle_outlined),
+                ),
+              ],
+            )),
           ),
           Flexible(
             flex: 4,
@@ -121,6 +140,17 @@ class _HomeScreenState extends State<HomeScreen> {
                                 .color,
                           ),
                         ),
+                        Container(
+                          alignment: Alignment.topRight,
+                          child: Transform.translate(
+                            offset: const Offset(-15, -15),
+                            child: IconButton(
+                              onPressed: totalResetClicked,
+                              icon: const Icon(Icons.delete_outline_outlined),
+                              iconSize: 30,
+                            ),
+                          ),
+                        )
                       ],
                     ),
                   ),
