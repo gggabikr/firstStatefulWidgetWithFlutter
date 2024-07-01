@@ -3,3 +3,12 @@
 *.dill
 *.dill
 *.d
+.dart_tool/flutter_build/2c2b7402940e59af2fb095619d8f665a/.filecache
+.dart_tool/flutter_build/2c2b7402940e59af2fb095619d8f665a/app.dill
+.dart_tool/flutter_build/2c2b7402940e59af2fb095619d8f665a/kernel_snapshot.d
+.dart_tool/flutter_build/2c2b7402940e59af2fb095619d8f665a/kernel_snapshot.stamp
+build/574fc2377ef17b67df2769d9e7907272.cache.dill.track.dill
+build/ios/Debug-iphonesimulator/App.framework/_CodeSignature/CodeResources
+build/ios/Debug-iphonesimulator/App.framework/flutter_assets/kernel_blob.bin
+build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources
+build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources
